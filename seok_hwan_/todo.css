@@ -7,7 +7,7 @@
 body {
     font-family: sans-serif;
     background-color: burlywood;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ body {
     width: 100%;
     max-width: 600px;
     min-width: 320px;
-
+    min-height: 200px;
 }
 
 #todoCard h2 {
@@ -53,6 +53,11 @@ body {
 
 #addBtn:hover {
     background-color: black;
+}
+
+#todoList {
+    max-height: 50vh;
+    overflow-y: auto;
 }
 
 #todoList li {
