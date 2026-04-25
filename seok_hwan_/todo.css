@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: burlywood;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#todoCard {
+    background: white;
+    border-radius: 16px;
+    padding: 6%;
+    width: 100%;
+    max-width: 600px;
+}
+
+#todoCard h2 {
+    font-size: 1.7rem;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 1.4em;
+}
+
+#inputArea {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+#todoInput {
+    flex: 1;
+    padding: 0.75em 14px;
+    font-size: 1rem;
+}
+
+#addBtn {
+    padding: 0.75em 1.2em;
+    background-color: brown;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+#addBtn:hover {
+    background-color: black;
+}
+
+#todoList li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.875em 0;
+    border-bottom: 1px solid gray;
+}
+
+#todoList li button:first-child.checked {
+    background-color: green;
+}
+
+#todoList li span {
+    flex: 1;
+    font-size: 1rem;
+    color: black;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: black;
+    }
+}
